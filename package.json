@@ -1,22 +1,22 @@
-{"homepage": "https://amitbiswas54.github.io/ReactReduxToolKit/",
+{
+  "homepage": "https://amitbiswas54.github.io/ReactReduxToolKit/",
   "name": "reactreduxtoolkit",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-},
-
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.1",
     "@tailwindcss/vite": "^4.1.17",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-redux": "^9.2.0",
+    "react-toastify": "^11.0.5",
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {

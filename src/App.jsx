@@ -5,6 +5,9 @@ import './App.css'
 import AddTask from './compononents/AddTask'
 import TaskList from './compononents/TaskList'
 import FilterTask from './compononents/FilterTask'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +19,7 @@ function App() {
      <AddTask />
      <FilterTask/>
      <TaskList />
+     <ToastContainer />
      </div>
     </>
   )

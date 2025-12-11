@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { store } from '../app/store'
 import { addtask } from '../features/task/taskSlice'
 import { useDispatch } from 'react-redux'
+import { ToastContainer, toast } from 'react-toastify';
 
 function AddTask() {
 
@@ -9,10 +10,13 @@ function AddTask() {
 
     const dispatch = useDispatch();
 
+    const notify = () => toast.success("Wow so easy !");
+
     const submitTask= (e)=>{
         e.preventDefault()
         if(text.trim() ==='') return;
         dispatch(addtask(text))
+        notify();
         setText('')
     }
     
